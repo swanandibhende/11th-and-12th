@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>Palindrome</title>
+		<script type="text/javascript">
+			function chk_palindrome()
+				{
+				var str,str_case,i,len;
+				str=form.enter.value;
+				str_case=str.toLowerCase();
+				len=str_case.length;
+				var p=1;
+				for(i=0;i<len/2;i++)
+					{
+					if(str_case.charAt(i)!=str_case.charAt(len-1-i))
+						{
+						p=0;
+						break;
+						}
+					}
+				if(p==1)
+					{
+					alert("Entered string is Palindrome");
+					}
+				else
+					{
+					alert("Entered string is not a Palindrome")
+					}
+		
+				}
+		</script>
+
+	</head>
+	<body bgcolor="pink">
+		<form name="form">
+			Enter to check it is Palindrome or not. <br><br>
+			<input type="text" name="enter"> <br><br>
+			<input type="button" name="check" value="Check String" onclick="chk_palindrome()">
+		</form>
+	</body>
+</html>

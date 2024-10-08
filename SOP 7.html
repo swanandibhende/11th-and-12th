@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>To count number of vowels in the given string</title>
+		<script type="text/javascript">
+		function getVowels() 
+			{
+			var s,i,ch,c;
+			c=0;
+			s=form.name.value;
+			for(i=0;i<=s.length;i++) 
+				{
+				ch=s.charAt(i); 
+				alert(ch);
+				if(ch=="A"||ch=="a"||ch=="E"||ch=="e"||ch=="I"||ch=="i"||ch=="O"||ch=="o"||ch=="U"||ch=="u") 
+					{
+					c++;
+					}
+				}
+			document.write("<h1>Number of vowels in string are:"+c); 
+ 			} 
+		</script>
+	</head>
+	<body bgcolor="pink">
+		<form name="form">
+			<h2>To accept string from user and count number of vowels in the given string.</h2>
+			Enter your Name: <input type="text" name="name" placeholder="Enter here"> <br><br>
+			<input type="submit" name="submit" value="Get Vowels" onclick="getVowels()">
+		</form>
+	</body>
+</html>

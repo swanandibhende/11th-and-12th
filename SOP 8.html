@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Temperature Conversion</title>
+	<body bgcolor="pink">
+		<h2>JavaScript code to convert Celsius to Fahrenhiet or vice-versa</h2> <br>
+			<p>Enter the Temperature</p>
+			<p><input type="text" id="celsius" onkeyup="convert('C')"> Temperature in degree Celsius</p> <br>
+			<p><input type="text" id="fahrenheit" onkeyup="convert('F')"> Temperature in degree Fahrenheit</p>
+		<script>
+			function convert(temperature) 
+			{
+			var t;
+			if (temperature == "C") //celsius to fahrenit
+				{
+				t = document.getElementById("celsius").value * 9 / 5 + 32;
+				document.getElementById("fahrenheit").value = Math.round(t);
+				} 
+			else //fahrenirt to celsius
+				{
+				t = (document.getElementById("fahrenheit").value -32) * 5 / 9;
+				document.getElementById("celsius").value = Math.round(t);
+				}
+			}
+		</script>
+		//Note:-you can remove math.round function if you need answer in decimal
+	</body>
+</html>
